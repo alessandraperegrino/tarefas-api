@@ -1,0 +1,947 @@
+---
+  0 debug pnpm:package-json: 
+    initial: 
+      name: "tarefas-api"
+      version: "0.0.1"
+      description: "API do App Lista de tarefas"
+      main: "src/server.js"
+      engines: 
+        node: "10.11.0"
+      scripts: 
+        start: "nodemon bootstrap"
+        postinstall: "knex migrate:latest && knex seed:run 01_Tasks"
+      keywords: 
+        - "api"
+        - "todo"
+        - "tarefas"
+        - "hapi"
+      author: 
+        name: "L A MINORA"
+      license: "ISC"
+      dependencies: 
+        babel-core: "^6.26.3"
+        babel-plugin-syntax-async-functions: "^6.13.0"
+        babel-polyfill: "^6.26.0"
+        babel-preset-env: "^1.7.0"
+        hapi: "^17.6.0"
+        knex: "^0.15.2"
+        nodemon: "^1.18.4"
+        sqlite3: "^4.0.3"
+      gitHead: "89ec30248bf8be0b81692c483bf88290120a32dc"
+      readme: "ERROR: No README data found!"
+      _id: "tarefas-api@0.0.1"
+    prefix: "/home/aluno/tarefas-api"
+  1 warn pnpm: 
+    message: "Moving babel-core that was installed by a different package manager to \"node_modules/.ignored"
+    prefix: "/home/aluno/tarefas-api"
+  2 warn pnpm: 
+    message: "Moving babel-plugin-syntax-async-functions that was installed by a different package manager to \"node_modules/.ignored"
+    prefix: "/home/aluno/tarefas-api"
+  3 warn pnpm: 
+    message: "Moving babel-polyfill that was installed by a different package manager to \"node_modules/.ignored"
+    prefix: "/home/aluno/tarefas-api"
+  4 warn pnpm: 
+    message: "Moving babel-preset-env that was installed by a different package manager to \"node_modules/.ignored"
+    prefix: "/home/aluno/tarefas-api"
+  5 warn pnpm: 
+    message: "Moving hapi that was installed by a different package manager to \"node_modules/.ignored"
+    prefix: "/home/aluno/tarefas-api"
+  6 warn pnpm: 
+    message: "Moving knex that was installed by a different package manager to \"node_modules/.ignored"
+    prefix: "/home/aluno/tarefas-api"
+  7 warn pnpm: 
+    message: "Moving nodemon that was installed by a different package manager to \"node_modules/.ignored"
+    prefix: "/home/aluno/tarefas-api"
+  8 warn pnpm: 
+    message: "Moving sqlite3 that was installed by a different package manager to \"node_modules/.ignored"
+    prefix: "/home/aluno/tarefas-api"
+  9 debug pnpm:stage: "resolution_started"
+  10 debug pnpm:progress: 
+    pkg: 
+      name: "babel-core"
+      rawSpec: "babel-core@^6.26.3"
+    status: "installing"
+  11 debug pnpm:progress: 
+    pkg: 
+      name: "babel-plugin-syntax-async-functions"
+      rawSpec: "babel-plugin-syntax-async-functions@^6.13.0"
+    status: "installing"
+  12 debug pnpm:progress: 
+    pkg: 
+      name: "babel-polyfill"
+      rawSpec: "babel-polyfill@^6.26.0"
+    status: "installing"
+  13 debug pnpm:progress: 
+    pkg: 
+      name: "babel-preset-env"
+      rawSpec: "babel-preset-env@^1.7.0"
+    status: "installing"
+  14 debug pnpm:progress: 
+    pkg: 
+      name: "hapi"
+      rawSpec: "hapi@^17.6.0"
+    status: "installing"
+  15 debug pnpm:progress: 
+    pkg: 
+      name: "knex"
+      rawSpec: "knex@^0.15.2"
+    status: "installing"
+  16 debug pnpm:progress: 
+    pkg: 
+      name: "nodemon"
+      rawSpec: "nodemon@^1.18.4"
+    status: "installing"
+  17 debug pnpm:progress: 
+    pkg: 
+      name: "sqlite3"
+      rawSpec: "sqlite3@^4.0.3"
+    status: "installing"
+  18 debug pnpm:progress: 
+    status: "resolved"
+    pkgId: "registry.npmjs.org/babel-plugin-syntax-async-functions/6.13.0"
+    pkg: 
+      name: "babel-plugin-syntax-async-functions"
+      rawSpec: "babel-plugin-syntax-async-functions@^6.13.0"
+  19 debug pnpm:progress: 
+    pkgId: "registry.npmjs.org/babel-plugin-syntax-async-functions/6.13.0"
+    pkgVersion: "6.13.0"
+    status: "downloaded_manifest"
+  20 debug pnpm:progress: 
+    pkgId: "registry.npmjs.org/babel-plugin-syntax-async-functions/6.13.0"
+    status: "resolving_content"
+  21 debug pnpm:progress: 
+    pkgId: "registry.npmjs.org/babel-plugin-syntax-async-functions/6.13.0"
+    status: "found_in_store"
+  22 debug pnpm:progress: 
+    status: "resolved"
+    pkgId: "registry.npmjs.org/knex/0.15.2"
+    pkg: 
+      name: "knex"
+      rawSpec: "knex@^0.15.2"
+  23 debug pnpm:progress: 
+    pkgId: "registry.npmjs.org/knex/0.15.2"
+    pkgVersion: "0.15.2"
+    status: "downloaded_manifest"
+  24 debug pnpm:progress: 
+    pkgId: "registry.npmjs.org/knex/0.15.2"
+    status: "resolving_content"
+  25 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/knex/0.15.2"
+      name: "babel-runtime"
+      rawSpec: "babel-runtime@^6.26.0"
+    status: "installing"
+  26 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/knex/0.15.2"
+      name: "bluebird"
+      rawSpec: "bluebird@^3.5.1"
+    status: "installing"
+  27 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/knex/0.15.2"
+      name: "chalk"
+      rawSpec: "chalk@2.3.2"
+    status: "installing"
+  28 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/knex/0.15.2"
+      name: "commander"
+      rawSpec: "commander@^2.16.0"
+    status: "installing"
+  29 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/knex/0.15.2"
+      name: "debug"
+      rawSpec: "debug@3.1.0"
+    status: "installing"
+  30 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/knex/0.15.2"
+      name: "inherits"
+      rawSpec: "inherits@~2.0.3"
+    status: "installing"
+  31 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/knex/0.15.2"
+      name: "interpret"
+      rawSpec: "interpret@^1.1.0"
+    status: "installing"
+  32 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/knex/0.15.2"
+      name: "liftoff"
+      rawSpec: "liftoff@2.5.0"
+    status: "installing"
+  33 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/knex/0.15.2"
+      name: "lodash"
+      rawSpec: "lodash@^4.17.10"
+    status: "installing"
+  34 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/knex/0.15.2"
+      name: "minimist"
+      rawSpec: "minimist@1.2.0"
+    status: "installing"
+  35 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/knex/0.15.2"
+      name: "mkdirp"
+      rawSpec: "mkdirp@^0.5.1"
+    status: "installing"
+  36 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/knex/0.15.2"
+      name: "pg-connection-string"
+      rawSpec: "pg-connection-string@2.0.0"
+    status: "installing"
+  37 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/knex/0.15.2"
+      name: "tarn"
+      rawSpec: "tarn@^1.1.4"
+    status: "installing"
+  38 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/knex/0.15.2"
+      name: "tildify"
+      rawSpec: "tildify@1.2.0"
+    status: "installing"
+  39 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/knex/0.15.2"
+      name: "uuid"
+      rawSpec: "uuid@^3.3.2"
+    status: "installing"
+  40 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/knex/0.15.2"
+      name: "v8flags"
+      rawSpec: "v8flags@^3.1.1"
+    status: "installing"
+  41 debug pnpm:progress: 
+    status: "resolved"
+    pkgId: "registry.npmjs.org/babel-preset-env/1.7.0"
+    pkg: 
+      name: "babel-preset-env"
+      rawSpec: "babel-preset-env@^1.7.0"
+  42 debug pnpm:progress: 
+    pkgId: "registry.npmjs.org/babel-preset-env/1.7.0"
+    pkgVersion: "1.7.0"
+    status: "downloaded_manifest"
+  43 debug pnpm:progress: 
+    pkgId: "registry.npmjs.org/babel-preset-env/1.7.0"
+    status: "resolving_content"
+  44 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-preset-env/1.7.0"
+      name: "babel-plugin-check-es2015-constants"
+      rawSpec: "babel-plugin-check-es2015-constants@^6.22.0"
+    status: "installing"
+  45 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-preset-env/1.7.0"
+      name: "babel-plugin-syntax-trailing-function-commas"
+      rawSpec: "babel-plugin-syntax-trailing-function-commas@^6.22.0"
+    status: "installing"
+  46 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-preset-env/1.7.0"
+      name: "babel-plugin-transform-async-to-generator"
+      rawSpec: "babel-plugin-transform-async-to-generator@^6.22.0"
+    status: "installing"
+  47 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-preset-env/1.7.0"
+      name: "babel-plugin-transform-es2015-arrow-functions"
+      rawSpec: "babel-plugin-transform-es2015-arrow-functions@^6.22.0"
+    status: "installing"
+  48 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-preset-env/1.7.0"
+      name: "babel-plugin-transform-es2015-block-scoped-functions"
+      rawSpec: "babel-plugin-transform-es2015-block-scoped-functions@^6.22.0"
+    status: "installing"
+  49 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-preset-env/1.7.0"
+      name: "babel-plugin-transform-es2015-block-scoping"
+      rawSpec: "babel-plugin-transform-es2015-block-scoping@^6.23.0"
+    status: "installing"
+  50 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-preset-env/1.7.0"
+      name: "babel-plugin-transform-es2015-classes"
+      rawSpec: "babel-plugin-transform-es2015-classes@^6.23.0"
+    status: "installing"
+  51 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-preset-env/1.7.0"
+      name: "babel-plugin-transform-es2015-computed-properties"
+      rawSpec: "babel-plugin-transform-es2015-computed-properties@^6.22.0"
+    status: "installing"
+  52 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-preset-env/1.7.0"
+      name: "babel-plugin-transform-es2015-destructuring"
+      rawSpec: "babel-plugin-transform-es2015-destructuring@^6.23.0"
+    status: "installing"
+  53 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-preset-env/1.7.0"
+      name: "babel-plugin-transform-es2015-duplicate-keys"
+      rawSpec: "babel-plugin-transform-es2015-duplicate-keys@^6.22.0"
+    status: "installing"
+  54 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-preset-env/1.7.0"
+      name: "babel-plugin-transform-es2015-for-of"
+      rawSpec: "babel-plugin-transform-es2015-for-of@^6.23.0"
+    status: "installing"
+  55 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-preset-env/1.7.0"
+      name: "babel-plugin-transform-es2015-function-name"
+      rawSpec: "babel-plugin-transform-es2015-function-name@^6.22.0"
+    status: "installing"
+  56 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-preset-env/1.7.0"
+      name: "babel-plugin-transform-es2015-literals"
+      rawSpec: "babel-plugin-transform-es2015-literals@^6.22.0"
+    status: "installing"
+  57 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-preset-env/1.7.0"
+      name: "babel-plugin-transform-es2015-modules-amd"
+      rawSpec: "babel-plugin-transform-es2015-modules-amd@^6.22.0"
+    status: "installing"
+  58 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-preset-env/1.7.0"
+      name: "babel-plugin-transform-es2015-modules-commonjs"
+      rawSpec: "babel-plugin-transform-es2015-modules-commonjs@^6.23.0"
+    status: "installing"
+  59 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-preset-env/1.7.0"
+      name: "babel-plugin-transform-es2015-modules-systemjs"
+      rawSpec: "babel-plugin-transform-es2015-modules-systemjs@^6.23.0"
+    status: "installing"
+  60 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-preset-env/1.7.0"
+      name: "babel-plugin-transform-es2015-modules-umd"
+      rawSpec: "babel-plugin-transform-es2015-modules-umd@^6.23.0"
+    status: "installing"
+  61 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-preset-env/1.7.0"
+      name: "babel-plugin-transform-es2015-object-super"
+      rawSpec: "babel-plugin-transform-es2015-object-super@^6.22.0"
+    status: "installing"
+  62 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-preset-env/1.7.0"
+      name: "babel-plugin-transform-es2015-parameters"
+      rawSpec: "babel-plugin-transform-es2015-parameters@^6.23.0"
+    status: "installing"
+  63 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-preset-env/1.7.0"
+      name: "babel-plugin-transform-es2015-shorthand-properties"
+      rawSpec: "babel-plugin-transform-es2015-shorthand-properties@^6.22.0"
+    status: "installing"
+  64 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-preset-env/1.7.0"
+      name: "babel-plugin-transform-es2015-spread"
+      rawSpec: "babel-plugin-transform-es2015-spread@^6.22.0"
+    status: "installing"
+  65 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-preset-env/1.7.0"
+      name: "babel-plugin-transform-es2015-sticky-regex"
+      rawSpec: "babel-plugin-transform-es2015-sticky-regex@^6.22.0"
+    status: "installing"
+  66 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-preset-env/1.7.0"
+      name: "babel-plugin-transform-es2015-template-literals"
+      rawSpec: "babel-plugin-transform-es2015-template-literals@^6.22.0"
+    status: "installing"
+  67 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-preset-env/1.7.0"
+      name: "babel-plugin-transform-es2015-typeof-symbol"
+      rawSpec: "babel-plugin-transform-es2015-typeof-symbol@^6.23.0"
+    status: "installing"
+  68 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-preset-env/1.7.0"
+      name: "babel-plugin-transform-es2015-unicode-regex"
+      rawSpec: "babel-plugin-transform-es2015-unicode-regex@^6.22.0"
+    status: "installing"
+  69 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-preset-env/1.7.0"
+      name: "babel-plugin-transform-exponentiation-operator"
+      rawSpec: "babel-plugin-transform-exponentiation-operator@^6.22.0"
+    status: "installing"
+  70 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-preset-env/1.7.0"
+      name: "babel-plugin-transform-regenerator"
+      rawSpec: "babel-plugin-transform-regenerator@^6.22.0"
+    status: "installing"
+  71 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-preset-env/1.7.0"
+      name: "browserslist"
+      rawSpec: "browserslist@^3.2.6"
+    status: "installing"
+  72 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-preset-env/1.7.0"
+      name: "invariant"
+      rawSpec: "invariant@^2.2.2"
+    status: "installing"
+  73 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-preset-env/1.7.0"
+      name: "semver"
+      rawSpec: "semver@^5.3.0"
+    status: "installing"
+  74 debug pnpm:progress: 
+    status: "resolved"
+    pkgId: "registry.npmjs.org/sqlite3/4.0.3"
+    pkg: 
+      name: "sqlite3"
+      rawSpec: "sqlite3@^4.0.3"
+  75 debug pnpm:progress: 
+    pkgId: "registry.npmjs.org/sqlite3/4.0.3"
+    pkgVersion: "4.0.3"
+    status: "downloaded_manifest"
+  76 debug pnpm:progress: 
+    pkgId: "registry.npmjs.org/sqlite3/4.0.3"
+    status: "resolving_content"
+  77 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/sqlite3/4.0.3"
+      name: "nan"
+      rawSpec: "nan@~2.10.0"
+    status: "installing"
+  78 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/sqlite3/4.0.3"
+      name: "node-pre-gyp"
+      rawSpec: "node-pre-gyp@^0.10.3"
+    status: "installing"
+  79 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/sqlite3/4.0.3"
+      name: "request"
+      rawSpec: "request@^2.87.0"
+    status: "installing"
+  80 debug pnpm:progress: 
+    status: "resolved"
+    pkgId: "registry.npmjs.org/babel-polyfill/6.26.0"
+    pkg: 
+      name: "babel-polyfill"
+      rawSpec: "babel-polyfill@^6.26.0"
+  81 debug pnpm:progress: 
+    pkgId: "registry.npmjs.org/babel-polyfill/6.26.0"
+    pkgVersion: "6.26.0"
+    status: "downloaded_manifest"
+  82 debug pnpm:progress: 
+    pkgId: "registry.npmjs.org/babel-polyfill/6.26.0"
+    status: "resolving_content"
+  83 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-polyfill/6.26.0"
+      name: "babel-runtime"
+      rawSpec: "babel-runtime@^6.26.0"
+    status: "installing"
+  84 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-polyfill/6.26.0"
+      name: "core-js"
+      rawSpec: "core-js@^2.5.0"
+    status: "installing"
+  85 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-polyfill/6.26.0"
+      name: "regenerator-runtime"
+      rawSpec: "regenerator-runtime@^0.10.5"
+    status: "installing"
+  86 debug pnpm:progress: 
+    status: "resolved"
+    pkgId: "registry.npmjs.org/nodemon/1.18.5"
+    pkg: 
+      name: "nodemon"
+      rawSpec: "nodemon@^1.18.4"
+  87 debug pnpm:progress: 
+    pkgId: "registry.npmjs.org/nodemon/1.18.5"
+    pkgVersion: "1.18.5"
+    status: "downloaded_manifest"
+  88 debug pnpm:progress: 
+    pkgId: "registry.npmjs.org/nodemon/1.18.5"
+    status: "resolving_content"
+  89 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/nodemon/1.18.5"
+      name: "chokidar"
+      rawSpec: "chokidar@^2.0.4"
+    status: "installing"
+  90 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/nodemon/1.18.5"
+      name: "debug"
+      rawSpec: "debug@^3.1.0"
+    status: "installing"
+  91 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/nodemon/1.18.5"
+      name: "ignore-by-default"
+      rawSpec: "ignore-by-default@^1.0.1"
+    status: "installing"
+  92 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/nodemon/1.18.5"
+      name: "minimatch"
+      rawSpec: "minimatch@^3.0.4"
+    status: "installing"
+  93 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/nodemon/1.18.5"
+      name: "pstree.remy"
+      rawSpec: "pstree.remy@^1.1.0"
+    status: "installing"
+  94 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/nodemon/1.18.5"
+      name: "semver"
+      rawSpec: "semver@^5.5.0"
+    status: "installing"
+  95 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/nodemon/1.18.5"
+      name: "supports-color"
+      rawSpec: "supports-color@^5.2.0"
+    status: "installing"
+  96 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/nodemon/1.18.5"
+      name: "touch"
+      rawSpec: "touch@^3.1.0"
+    status: "installing"
+  97 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/nodemon/1.18.5"
+      name: "undefsafe"
+      rawSpec: "undefsafe@^2.0.2"
+    status: "installing"
+  98 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/nodemon/1.18.5"
+      name: "update-notifier"
+      rawSpec: "update-notifier@^2.3.0"
+    status: "installing"
+  99 debug pnpm:progress: 
+    status: "resolved"
+    pkgId: "registry.npmjs.org/babel-runtime/6.26.0"
+    pkg: 
+      dependentId: "registry.npmjs.org/knex/0.15.2"
+      name: "babel-runtime"
+      rawSpec: "babel-runtime@^6.26.0"
+  100 debug pnpm:progress: 
+    pkgId: "registry.npmjs.org/babel-runtime/6.26.0"
+    pkgVersion: "6.26.0"
+    status: "downloaded_manifest"
+  101 debug pnpm:progress: 
+    pkgId: "registry.npmjs.org/babel-runtime/6.26.0"
+    status: "resolving_content"
+  102 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-runtime/6.26.0"
+      name: "core-js"
+      rawSpec: "core-js@^2.4.0"
+    status: "installing"
+  103 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-runtime/6.26.0"
+      name: "regenerator-runtime"
+      rawSpec: "regenerator-runtime@^0.11.0"
+    status: "installing"
+  104 debug pnpm:progress: 
+    status: "resolved"
+    pkgId: "registry.npmjs.org/hapi/17.6.0"
+    pkg: 
+      name: "hapi"
+      rawSpec: "hapi@^17.6.0"
+  105 debug pnpm:progress: 
+    pkgId: "registry.npmjs.org/hapi/17.6.0"
+    pkgVersion: "17.6.0"
+    status: "downloaded_manifest"
+  106 debug pnpm:progress: 
+    pkgId: "registry.npmjs.org/hapi/17.6.0"
+    status: "resolving_content"
+  107 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/hapi/17.6.0"
+      name: "accept"
+      rawSpec: "accept@3.x.x"
+    status: "installing"
+  108 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/hapi/17.6.0"
+      name: "ammo"
+      rawSpec: "ammo@3.x.x"
+    status: "installing"
+  109 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/hapi/17.6.0"
+      name: "boom"
+      rawSpec: "boom@7.x.x"
+    status: "installing"
+  110 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/hapi/17.6.0"
+      name: "bounce"
+      rawSpec: "bounce@1.x.x"
+    status: "installing"
+  111 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/hapi/17.6.0"
+      name: "call"
+      rawSpec: "call@5.x.x"
+    status: "installing"
+  112 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/hapi/17.6.0"
+      name: "catbox"
+      rawSpec: "catbox@10.x.x"
+    status: "installing"
+  113 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/hapi/17.6.0"
+      name: "catbox-memory"
+      rawSpec: "catbox-memory@3.x.x"
+    status: "installing"
+  114 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/hapi/17.6.0"
+      name: "heavy"
+      rawSpec: "heavy@6.x.x"
+    status: "installing"
+  115 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/hapi/17.6.0"
+      name: "hoek"
+      rawSpec: "hoek@5.x.x"
+    status: "installing"
+  116 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/hapi/17.6.0"
+      name: "joi"
+      rawSpec: "joi@13.x.x"
+    status: "installing"
+  117 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/hapi/17.6.0"
+      name: "mimos"
+      rawSpec: "mimos@4.x.x"
+    status: "installing"
+  118 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/hapi/17.6.0"
+      name: "podium"
+      rawSpec: "podium@3.x.x"
+    status: "installing"
+  119 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/hapi/17.6.0"
+      name: "shot"
+      rawSpec: "shot@4.x.x"
+    status: "installing"
+  120 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/hapi/17.6.0"
+      name: "statehood"
+      rawSpec: "statehood@6.x.x"
+    status: "installing"
+  121 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/hapi/17.6.0"
+      name: "subtext"
+      rawSpec: "subtext@6.x.x"
+    status: "installing"
+  122 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/hapi/17.6.0"
+      name: "teamwork"
+      rawSpec: "teamwork@3.x.x"
+    status: "installing"
+  123 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/hapi/17.6.0"
+      name: "topo"
+      rawSpec: "topo@3.x.x"
+    status: "installing"
+  124 debug pnpm:progress: 
+    status: "resolved"
+    pkgId: "registry.npmjs.org/babel-core/6.26.3"
+    pkg: 
+      name: "babel-core"
+      rawSpec: "babel-core@^6.26.3"
+  125 debug pnpm:progress: 
+    pkgId: "registry.npmjs.org/babel-core/6.26.3"
+    pkgVersion: "6.26.3"
+    status: "downloaded_manifest"
+  126 debug pnpm:progress: 
+    pkgId: "registry.npmjs.org/babel-core/6.26.3"
+    status: "resolving_content"
+  127 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-core/6.26.3"
+      name: "babel-code-frame"
+      rawSpec: "babel-code-frame@^6.26.0"
+    status: "installing"
+  128 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-core/6.26.3"
+      name: "babel-generator"
+      rawSpec: "babel-generator@^6.26.0"
+    status: "installing"
+  129 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-core/6.26.3"
+      name: "babel-helpers"
+      rawSpec: "babel-helpers@^6.24.1"
+    status: "installing"
+  130 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-core/6.26.3"
+      name: "babel-messages"
+      rawSpec: "babel-messages@^6.23.0"
+    status: "installing"
+  131 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-core/6.26.3"
+      name: "babel-register"
+      rawSpec: "babel-register@^6.26.0"
+    status: "installing"
+  132 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-core/6.26.3"
+      name: "babel-runtime"
+      rawSpec: "babel-runtime@^6.26.0"
+    status: "installing"
+  133 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-core/6.26.3"
+      name: "babel-template"
+      rawSpec: "babel-template@^6.26.0"
+    status: "installing"
+  134 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-core/6.26.3"
+      name: "babel-traverse"
+      rawSpec: "babel-traverse@^6.26.0"
+    status: "installing"
+  135 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-core/6.26.3"
+      name: "babel-types"
+      rawSpec: "babel-types@^6.26.0"
+    status: "installing"
+  136 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-core/6.26.3"
+      name: "babylon"
+      rawSpec: "babylon@^6.18.0"
+    status: "installing"
+  137 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-core/6.26.3"
+      name: "convert-source-map"
+      rawSpec: "convert-source-map@^1.5.1"
+    status: "installing"
+  138 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-core/6.26.3"
+      name: "debug"
+      rawSpec: "debug@^2.6.9"
+    status: "installing"
+  139 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-core/6.26.3"
+      name: "json5"
+      rawSpec: "json5@^0.5.1"
+    status: "installing"
+  140 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-core/6.26.3"
+      name: "lodash"
+      rawSpec: "lodash@^4.17.4"
+    status: "installing"
+  141 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-core/6.26.3"
+      name: "minimatch"
+      rawSpec: "minimatch@^3.0.4"
+    status: "installing"
+  142 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-core/6.26.3"
+      name: "path-is-absolute"
+      rawSpec: "path-is-absolute@^1.0.1"
+    status: "installing"
+  143 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-core/6.26.3"
+      name: "private"
+      rawSpec: "private@^0.1.8"
+    status: "installing"
+  144 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-core/6.26.3"
+      name: "slash"
+      rawSpec: "slash@^1.0.0"
+    status: "installing"
+  145 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/babel-core/6.26.3"
+      name: "source-map"
+      rawSpec: "source-map@^0.5.7"
+    status: "installing"
+  146 debug pnpm:progress: 
+    status: "resolved"
+    pkgId: "registry.npmjs.org/tarn/1.1.4"
+    pkg: 
+      dependentId: "registry.npmjs.org/knex/0.15.2"
+      name: "tarn"
+      rawSpec: "tarn@^1.1.4"
+  147 debug pnpm:progress: 
+    pkgId: "registry.npmjs.org/tarn/1.1.4"
+    pkgVersion: "1.1.4"
+    status: "downloaded_manifest"
+  148 debug pnpm:progress: 
+    pkgId: "registry.npmjs.org/tarn/1.1.4"
+    status: "resolving_content"
+  149 debug pnpm:progress: 
+    status: "resolved"
+    pkgId: "registry.npmjs.org/uuid/3.3.2"
+    pkg: 
+      dependentId: "registry.npmjs.org/knex/0.15.2"
+      name: "uuid"
+      rawSpec: "uuid@^3.3.2"
+  150 debug pnpm:progress: 
+    pkgId: "registry.npmjs.org/uuid/3.3.2"
+    pkgVersion: "3.3.2"
+    status: "downloaded_manifest"
+  151 debug pnpm:progress: 
+    pkgId: "registry.npmjs.org/uuid/3.3.2"
+    status: "resolving_content"
+  152 debug pnpm:progress: 
+    status: "resolved"
+    pkgId: "registry.npmjs.org/v8flags/3.1.1"
+    pkg: 
+      dependentId: "registry.npmjs.org/knex/0.15.2"
+      name: "v8flags"
+      rawSpec: "v8flags@^3.1.1"
+  153 debug pnpm:progress: 
+    pkgId: "registry.npmjs.org/v8flags/3.1.1"
+    pkgVersion: "3.1.1"
+    status: "downloaded_manifest"
+  154 debug pnpm:progress: 
+    pkgId: "registry.npmjs.org/v8flags/3.1.1"
+    status: "resolving_content"
+  155 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/v8flags/3.1.1"
+      name: "homedir-polyfill"
+      rawSpec: "homedir-polyfill@^1.0.1"
+    status: "installing"
+  156 debug pnpm:progress: 
+    status: "resolved"
+    pkgId: "registry.npmjs.org/minimist/1.2.0"
+    pkg: 
+      dependentId: "registry.npmjs.org/knex/0.15.2"
+      name: "minimist"
+      rawSpec: "minimist@1.2.0"
+  157 debug pnpm:progress: 
+    pkgId: "registry.npmjs.org/minimist/1.2.0"
+    pkgVersion: "1.2.0"
+    status: "downloaded_manifest"
+  158 debug pnpm:progress: 
+    pkgId: "registry.npmjs.org/minimist/1.2.0"
+    status: "resolving_content"
+  159 debug pnpm:progress: 
+    status: "resolved"
+    pkgId: "registry.npmjs.org/pg-connection-string/2.0.0"
+    pkg: 
+      dependentId: "registry.npmjs.org/knex/0.15.2"
+      name: "pg-connection-string"
+      rawSpec: "pg-connection-string@2.0.0"
+  160 debug pnpm:progress: 
+    pkgId: "registry.npmjs.org/pg-connection-string/2.0.0"
+    pkgVersion: "2.0.0"
+    status: "downloaded_manifest"
+  161 debug pnpm:progress: 
+    pkgId: "registry.npmjs.org/pg-connection-string/2.0.0"
+    status: "resolving_content"
+  162 debug pnpm:progress: 
+    status: "resolved"
+    pkgId: "registry.npmjs.org/tildify/1.2.0"
+    pkg: 
+      dependentId: "registry.npmjs.org/knex/0.15.2"
+      name: "tildify"
+      rawSpec: "tildify@1.2.0"
+  163 debug pnpm:progress: 
+    pkgId: "registry.npmjs.org/tildify/1.2.0"
+    pkgVersion: "1.2.0"
+    status: "downloaded_manifest"
+  164 debug pnpm:progress: 
+    pkgId: "registry.npmjs.org/tildify/1.2.0"
+    status: "resolving_content"
+  165 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/tildify/1.2.0"
+      name: "os-homedir"
+      rawSpec: "os-homedir@^1.0.0"
+    status: "installing"
+  166 debug pnpm:progress: 
+    status: "resolved"
+    pkgId: "registry.npmjs.org/chalk/2.3.2"
+    pkg: 
+      dependentId: "registry.npmjs.org/knex/0.15.2"
+      name: "chalk"
+      rawSpec: "chalk@2.3.2"
+  167 debug pnpm:progress: 
+    pkgId: "registry.npmjs.org/chalk/2.3.2"
+    pkgVersion: "2.3.2"
+    status: "downloaded_manifest"
+  168 debug pnpm:progress: 
+    pkgId: "registry.npmjs.org/chalk/2.3.2"
+    status: "resolving_content"
+  169 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/chalk/2.3.2"
+      name: "ansi-styles"
+      rawSpec: "ansi-styles@^3.2.1"
+    status: "installing"
+  170 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/chalk/2.3.2"
+      name: "escape-string-regexp"
+      rawSpec: "escape-string-regexp@^1.0.5"
+    status: "installing"
+  171 debug pnpm:progress: 
+    pkg: 
+      dependentId: "registry.npmjs.org/chalk/2.3.2"
+      name: "supports-color"
+      rawSpec: "supports-color@^5.3.0"
+    status: "installing"
